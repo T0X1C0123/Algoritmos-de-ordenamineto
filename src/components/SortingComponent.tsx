@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { insertionSort } from '../utils/insertionSort';
 
 export const SortingComponent: React.FC = () => {
-    const [nums, setNums] = useState<number[]>([5, 3, 8, 4, 2, 1, 6, 7]);
+    const [nums, setNums] = useState<number[]>([5, 3, 8, 4, 2, 1, 6, 7, 10, 15, 16]);
 
     const handleSort = () => {
         const sortedNums: number[] = insertionSort([...nums]);
@@ -16,7 +16,7 @@ export const SortingComponent: React.FC = () => {
                 {nums.join(', ')}
             </div>
             <button onClick={handleSort}>
-                Sort Nums
+                Sort Numbers
             </button>
         </div>
     );
